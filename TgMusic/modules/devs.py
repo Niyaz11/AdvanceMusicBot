@@ -342,22 +342,17 @@ async def sys_stats(client: Client, message: types.Message) -> None:
   • <b>Py-TgCalls:</b> <code>{pytgver}</code>
   • <b>NTgCalls:</b> <code>{ntgver}</code>
   • <b>PyTdBot:</b> <code>{py_td_ver}</code>
-
 <b>🖥️ System Information:</b>
   • <b>System:</b> <code>{system} {release}</code>
   • <b>Architecture:</b> <code>{architecture}</code>
   • <b>Processor:</b> <code>{processor}</code>
   • <b>Hostname:</b> <code>{hostname}</code>
-  • <b>IP Address:</b> <tg-spoiler>{ip_address}</tg-spoiler>
   • <b>MAC Address:</b> <code>{mac_address}</code>
-
 <b>💾 Memory:</b>
   • <b>RAM:</b> <code>{ram.used / (1024 ** 3):.2f} GiB / {ram.total / (1024 ** 3):.2f} GiB ({ram.percent}%)</code>
-
 <b>🔧 CPU:</b>
   • <b>Cores:</b> <code>{cores_physical} physical, {cores_total} logical</code>
   • <b>Frequency:</b> <code>{cpu_freq_str}</code>
-
 <b>💽 Disk:</b>
   • <b>Total:</b> <code>{disk.total / (1024 ** 3):.2f} GiB</code>
   • <b>Used:</b> <code>{disk.used / (1024 ** 3):.2f} GiB ({disk.percent}%)</code>
