@@ -173,9 +173,9 @@ async def _handle_single_track(
     thumb = await gen_thumb(song) if await db.get_thumbnail_status(chat_id) else ""
     now_playing = (
         f"<b>Albedo Now Playing:</b>\n\n"
-        f"<b><blockquote>‣Track:</b> <a href='{song.url}'>{song.name}</a>\n"
-        f"<b>‣Duration:</b> {sec_to_min(song.duration)}\n"
-        f"<b>‣Requested by:</b> {song.user}</blockquote>"
+        f"‣<b>Track:</b><a href='{song.url}'>{song.name}</a>\n"
+        f"‣<b>Duration:</b>{sec_to_min(song.duration)}\n"
+        f"‣<b>Requested by:</b>{song.user}"
     )
 
     update_result = await _update_msg_with_thumb(
